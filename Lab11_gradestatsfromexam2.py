@@ -104,7 +104,7 @@ odd_string = "Odd: " + str(odd_nums)
 stats = [count_string, total_string, highest_string, lowest_string, mean_string, even_string, odd_string]
 
 try:
-    with open("Statistics.txt", "w") as file:
+    with open("stats.txt", "w") as file:
         for item in stats:
             file.write(item + "\n")
 except IOError: # input/output error
